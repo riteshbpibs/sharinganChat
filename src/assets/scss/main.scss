@@ -1,0 +1,19 @@
+@use "./fontStyle.scss";
+@use "./landingPage.scss";
+
+* body {
+  background-color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+.main_container {
+  width: 1280px;
+  max-width: 90%;
+  margin: 0 auto;
+}
