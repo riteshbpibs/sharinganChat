@@ -14,8 +14,10 @@ export const StyledPara = styled.p`
   font-size: ${(props) => props.size || "16px"};
   color: ${(props) => props.color || "#F9FAFB"};
   margin: ${(props) => props.margin || "0"};
+  padding: ${(props) => props.padding || "0"};
   font-weight: ${(props) => props.weight || "normal"};
 
+  ${(props) => props.maxWidth && `max-width: ${props.maxWidth}`};
   ${(props) => props.lineHeight && `line-height: ${props.lineHeight}`};
   ${(props) => props.letterSpace && `letter-spacing: ${props.letterSpace}`};
 `;
